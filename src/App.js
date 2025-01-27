@@ -17,7 +17,8 @@ function App() {
       <Home />
       <Footer/>
       
-    </div>
+ </div>
+
 
   );
 }
