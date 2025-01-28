@@ -12,12 +12,17 @@ function App() {
 
  
   return (
-    <div class="bg-stone-800 h-full flex flex-col items-center justify-center w-full">
-      <Navbar />
-      <Home />
-      <Footer/>
+    <div class=" bg-black  h-full flex flex-col items-center justify-center w-full">
+      <div class = " w-full flex flex-col bg-gradient-to-bl from-blue-950 via-blue-800 to-blue-950 to-50% justify-center items-center">
+
+        <Navbar />
+        <Home />
+
+        <Footer/>
+      </div>
+
       
- </div>
+  </div>
 
 
   );
