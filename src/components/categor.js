@@ -127,7 +127,7 @@ const Categor = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className={`log-entry bg-white bg-opacity-5 drop-shadow-xl border-l-4 ${
+                className={`log-entry bg-white bg-opacity-5 flex flex-col gap-2 items-start drop-shadow-xl border-l-4 ${
                   ticket.priority === "P1"
                     ? "border-l-red-500"
                     : ticket.priority === "P2"
@@ -137,7 +137,7 @@ const Categor = () => {
                     : "border-l-green-500"
                 } p-4 rounded-2xl shadow-md`}
               >
-                <div className="flex justify-between items-center mb-2">
+                <div className="flex justify-between w-full items-center mb-2">
                   <span className="text-gray-400 text-sm">{dayjs(ticket.timestamp).format("DD/MM/YYYY HH:mm:ss")}</span>
                   <span
                     className={`text-sm font-semibold ${
@@ -188,7 +188,7 @@ const Categor = () => {
               filteredTickets.map((ticket) => (
                 <div
                   key={ticket.id}
-                  className={`log-entry bg-white bg-opacity-5 drop-shadow-xl border-l-4 ${
+                  className={`log-entry bg-white flex flex-col gap-2 items-start justify-start bg-opacity-5 drop-shadow-xl border-l-4 ${
                     ticket.priority === "P1"
                       ? "border-l-red-500"
                       : ticket.priority === "P2"
@@ -198,7 +198,7 @@ const Categor = () => {
                       : "border-l-green-500"
                   } p-4 rounded-xl shadow-md`}
                 >
-                  <div className="flex justify-between items-center mb-2">
+                  <div className="flex justify-between w-full items-center mb-2">
                     <span className="text-gray-400 text-sm">{dayjs(ticket.timestamp).format("DD/MM/YYYY HH:mm:ss")}</span>
                     <span
                       className={`text-sm font-semibold ${
